@@ -1,10 +1,10 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Nav from "./components/nav";
+import Nav from "./components/NavBar";
 import About from "./pages/AboutPage";
-import Shop from "./components/shop";
-import Home from "./components/home";
-import Error from "./components/errorPage";
+import Shop from "./pages/ShopPage";
+import Home from "./pages/HomePage";
+import Error from "./pages/ErrorPage";
 
 import "./App.css";
 
