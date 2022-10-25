@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import Video from "../assets/homepage-video.mp4";
 import Footer from "../components/Footer";
 
