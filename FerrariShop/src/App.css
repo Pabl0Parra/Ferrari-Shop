@@ -1,41 +1,277 @@
+@font-face {
+  font-family: ferrari;
+  src: url("./assets/FerroRosso.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
+.home-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.nav-container {
+  height: 3.5rem;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  width: 100vw;
+}
+
+.header-left-div {
+  display: flex;
+  width: 50%;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  height: 100%;
+  margin-left: 2rem;
+}
+
+.ferrari-logo {
+  height: 60%;
+}
+
+h2 {
+  margin: 0;
+  font-family: ferrari;
+  font-weight: 100;
+}
+
+.links-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.cart-button {
+  height: 60%;
+  border: none;
+  display: flex;
+  background-color: inherit;
+}
+
+.cart-logo {
+  height: 100%;
+}
+
+.cart-count {
+  color: red;
+}
+
+.nav-link {
+  color: black;
+  text-decoration: none;
+}
+
+.cart-div {
+  height: 100%;
+  background-color: #1e1b1b;
+  flex-direction: column;
+  flex-grow: 1;
+  color: white;
+}
+
+.cart-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.your-cart {
+  color: white;
+}
+
+.cart-cars-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-car-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+.cart-car-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cart-car-img {
+  width: 10rem;
+}
+
+.cart-car-top-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-car-amount-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.cart-car-amount-increment,
+.cart-car-amount-decrement {
+  background-color: inherit;
+  border: none;
+  color: white;
+}
+
+.cart-car-amount {
+  font-size: large;
+  font-weight: bold;
+}
+
+.cart-car-price {
+  font-size: larger;
+  font-weight: bold;
+}
+
+.cart-car-delete {
+  background-color: inherit;
+  color: white;
+  border: 1px white solid;
+}
+
+.cart-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.total-price {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.checkout-button {
+  background-color: inherit;
+  color: black;
+  width: 80%;
+  height: 2rem;
+  background-color: rgb(177, 240, 60);
+}
+
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.home-h1 {
   text-align: center;
+  color: white;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.shop-container {
+  background-color: #1e1b1b;
+  flex-grow: 1;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.car-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.car-description {
+  text-align: center;
+  width: 90%;
 }
 
-.card {
-  padding: 2em;
+.car-image {
+  width: 80%;
 }
 
-.read-the-docs {
-  color: #888;
+.car-name {
+  font-size: x-large;
+  margin: 0;
+}
+
+.addToCart-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.addToCart-button {
+  background-color: inherit;
+  border: 1px solid white;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 5%;
+}
+
+.addToCart-amount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.addToCart-amount-button {
+  background-color: inherit;
+  border: 1px solid white;
+  color: white;
+  border-radius: 5%;
+}
+
+.footer-div {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: gray;
+  margin-top: 2rem;
 }
