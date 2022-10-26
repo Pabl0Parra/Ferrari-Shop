@@ -1,10 +1,14 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Nav({ cartCount, cartCars }) {
   return (
     <nav className="nav-container">
       <div className="header-left-div">
-        <h2>Ferrari</h2>
+        <h2>
+          <NavLink to="/" className="ferrari-logo">
+            Ferrari
+          </NavLink>
+        </h2>
         <img
           className="ferrari-logo"
           alt="logo"
@@ -12,20 +16,20 @@ function Nav({ cartCount, cartCars }) {
         ></img>
       </div>
       <div className="links-div">
-        <Link className="nav-link" to="/">
+        <NavLink className="nav-link underline" to="/">
           Home
-        </Link>
-        <Link className="nav-link" to="shop">
+        </NavLink>
+        <NavLink className="nav-link underline" to="shop">
           Shop
-        </Link>
-        <Link className="cartButton" to={"cart"}>
+        </NavLink>
+        <NavLink className="cartButton" to={"cart"}>
           <img
             src="https://img.icons8.com/dotty/45/000000/shopping-cart.png"
             alt="cart"
             className="cartLogo"
           ></img>
           <span className="cartCount">{cartCount}</span>
-        </Link>
+        </NavLink>
       </div>
     </nav>
   );

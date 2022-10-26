@@ -113,6 +113,7 @@ function App() {
               addAmount={addAmount}
               incrementAmount={incrementAmountInShop}
               decrementAmount={decrementAmountInShop}
+              setAddAmount={setAddAmount}
             />
           }
         />

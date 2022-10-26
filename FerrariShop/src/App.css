@@ -92,6 +92,28 @@ h2 {
   color: black;
 }
 
+.nav-link::before {
+  transition: 300ms;
+  height: 5px;
+  content: "";
+  position: absolute;
+  background-color: #031d44;
+}
+
+.underline::before {
+  width: 0%;
+  bottom: 10px;
+}
+
+.underline:hover::before {
+  width: 3%;
+}
+
+.ferrari-logo {
+  color: #ff2800;
+  text-decoration: none;
+}
+
 .cart-div {
   height: 100%;
   background-color: #fff;
