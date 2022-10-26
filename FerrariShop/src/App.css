@@ -191,11 +191,15 @@ h2 {
 }
 
 .checkout-button {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
   background-color: inherit;
   color: black;
   width: 80%;
   height: 2rem;
-  background-color: rgb(177, 240, 60);
+  background-color: yellow;
 }
 
 video {

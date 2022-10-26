@@ -107,7 +107,8 @@ const CARS = [
     amount: 1,
     id: 12,
     name: "Monza SP1",
-    image: "shorturl.at/cioxD",
+    image:
+      "https://api.ferrarinetwork.ferrari.com/v2/network-content/medias/resize/5dd55285f8fc7b0aa906c5db-line-up-ferrari-monza-sp1?apikey=9QscUiwr5n0NhOuQb463QEKghPrVlpaF&height=750",
     price: "195000",
     description: `The Ferrari Monza SP1, together with the Monza SP2, are the forerunners in a new concept, known as ‘Icona’ (Icon), that taps into a leitmotif of the most evocative cars in the company’s history to create a new segment of special limited series cars for clients and collectors. The intention is to use a modern aesthetic to reinterpret a timeless style, with technologically advanced components and the highest performance possible through continuous innovation.`,
   },
@@ -115,7 +116,8 @@ const CARS = [
     amount: 1,
     id: 13,
     name: "Monza SP2",
-    image: "shorturl.at/sLQS9",
+    image:
+      "https://api.ferrarinetwork.ferrari.com/v2/network-content/medias/resize/5dd552850cf6995f44de91fa-line-up-ferrari-monza-sp2?apikey=9QscUiwr5n0NhOuQb463QEKghPrVlpaF&height=750",
     price: "199000",
     description: `The Ferrari Monza SP2, together with the Monza SP1, are the forerunners in a new concept, known as ‘Icona’ (Icon), that taps into a leitmotif of the most evocative cars in the company’s history to create a new segment of special limited series cars for clients and collectors. The intention is to use a modern aesthetic to reinterpret a timeless style, with technologically advanced components and the highest performance possible through continuous innovation.`,
   },
