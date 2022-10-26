@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function Nav() {
+function Nav({ cartCount, cartCars }) {
   return (
     <nav className="nav-container">
       <div className="header-left-div">
@@ -18,17 +18,14 @@ function Nav() {
         <Link className="nav-link" to="shop">
           Shop
         </Link>
-        <Link className="nav-link" to="about">
-          About
-        </Link>
-        <button className="cart-button">
+        <Link className="cartButton" to={"cart"}>
           <img
             src="https://img.icons8.com/dotty/45/000000/shopping-cart.png"
             alt="cart"
-            className="cart-logo"
+            className="cartLogo"
           ></img>
-          <span className="cart-count">0</span>
-        </button>
+          <span className="cartCount">{cartCount}</span>
+        </Link>
       </div>
     </nav>
   );
