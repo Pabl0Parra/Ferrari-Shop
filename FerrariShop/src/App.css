@@ -26,12 +26,14 @@ body {
 
 .nav-container {
   height: 3.5rem;
-  background-color: rgb(255, 255, 255);
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: black;
+  color: #ff2800;
   width: 100vw;
+  border-bottom: 1px solid gray;
+  position: sticky;
 }
 
 .header-left-div {
@@ -60,13 +62,14 @@ h2 {
   align-items: center;
   width: 50%;
   height: 100%;
+  margin-right: 3rem;
 }
 
 .cart-button {
   height: 60%;
   border: none;
   display: flex;
-  background-color: inherit;
+  background-color: #ff2800;
 }
 
 .cart-logo {
@@ -78,16 +81,21 @@ h2 {
 }
 
 .nav-link {
-  color: black;
+  color: #ff2800;
   text-decoration: none;
+}
+
+.nav-link:hover {
+  font-size: 18px;
+  color: black;
 }
 
 .cart-div {
   height: 100%;
-  background-color: #1e1b1b;
+  background-color: #fff;
   flex-direction: column;
   flex-grow: 1;
-  color: white;
+  color: black;
 }
 
 .cart-head {
@@ -98,7 +106,7 @@ h2 {
 }
 
 .your-cart {
-  color: white;
+  color: black;
 }
 
 .cart-cars-container {
@@ -148,7 +156,7 @@ h2 {
 .cart-car-amount-decrement {
   background-color: inherit;
   border: none;
-  color: white;
+  color: black;
 }
 
 .cart-car-amount {
@@ -162,9 +170,12 @@ h2 {
 }
 
 .cart-car-delete {
-  background-color: inherit;
+  background-color: #ff2800;
   color: white;
-  border: 1px white solid;
+}
+
+.cart-car-delete:hover {
+  background-color: #b21127;
 }
 
 .cart-bottom {
@@ -203,9 +214,9 @@ video {
 }
 
 .shop-container {
-  background-color: #1e1b1b;
+  background-color: #fff;
   flex-grow: 1;
-  color: white;
+  color: black;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -241,11 +252,15 @@ video {
 }
 
 .addToCart-button {
-  background-color: inherit;
-  border: 1px solid white;
+  background-color: #ff2800;
+  border: none;
   color: white;
-  padding: 0.5rem;
+  padding: 1rem;
   border-radius: 5%;
+}
+
+.addToCart-button:hover {
+  background-color: #b21127;
 }
 
 .addToCart-amount {

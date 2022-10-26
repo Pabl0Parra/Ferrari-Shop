@@ -20,10 +20,7 @@ function Shop({
                 Add To Cart
               </button>
               <div className="addToCart-amount">
-                <button
-                  className="addToCart-amount-button"
-                  onClick={decrementAmount}
-                >
+                <button className="addToCart-button" onClick={decrementAmount}>
                   -
                 </button>
                 <span>{addAmount[car.id]}</span>
