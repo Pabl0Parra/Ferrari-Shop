@@ -1,6 +1,12 @@
 import CARS from "../CarsData";
 
-function Shop() {
+function Shop({
+  handleAddToCart,
+  cartCars,
+  addAmount,
+  decrementAmount,
+  incrementAmount,
+}) {
   return (
     <div className="shop-container">
       {CARS.map((car) => {
@@ -9,12 +15,21 @@ function Shop() {
             <img className="car-image" src={car.image} alt="car"></img>
             <h3 className="car-name">{car.name}</h3>
             <p className="car-description">{car.description}</p>
-            <div className="addToCart-div">
-              <button className="addToCart-button">Add To Cart</button>
+            <div className="addToCart-div" id={car.id}>
+              <button className="addToCart-button" onClick={handleAddToCart}>
+                Add To Cart
+              </button>
               <div className="addToCart-amount">
-                <button className="addToCart-amount-button">-</button>
-                <span>1</span>
-                <button className="addToCart-button">+</button>
+                <button
+                  className="addToCart-amount-button"
+                  onClick={decrementAmount}
+                >
+                  -
+                </button>
+                <span>{addAmount[car.id]}</span>
+                <button className="addToCart-button" onClick={incrementAmount}>
+                  +
+                </button>
               </div>
             </div>
             <div className="line"></div>
